@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  codepath-assignment1
 //
-//  Created by Michael Lewis on 2/2/15.
-//  Copyright (c) 2015 Michael Lewis. All rights reserved.
+//  Created by Michael Lewis on 2/6/15.
+//  Copyright (c) 2015 Machel. All rights reserved.
 //
 
 import UIKit
