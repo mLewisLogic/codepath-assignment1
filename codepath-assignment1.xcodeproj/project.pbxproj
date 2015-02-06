@@ -10,6 +10,7 @@
 		27816D461A856155009DF44B /* private.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27816D451A856155009DF44B /* private.plist */; };
 		27816D491A85622A009DF44B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 27816D471A85622A009DF44B /* .gitignore */; };
 		27816D4A1A85622A009DF44B /* .ruby-version in Resources */ = {isa = PBXBuildFile; fileRef = 27816D481A85622A009DF44B /* .ruby-version */; };
+		27816D4C1A856283009DF44B /* private.plist.example in Resources */ = {isa = PBXBuildFile; fileRef = 27816D4B1A856283009DF44B /* private.plist.example */; };
 		27DE7B3F1A854C34009A6B17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DE7B3E1A854C34009A6B17 /* AppDelegate.swift */; };
 		27DE7B411A854C34009A6B17 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DE7B401A854C34009A6B17 /* MovieTableViewController.swift */; };
 		27DE7B441A854C34009A6B17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27DE7B421A854C34009A6B17 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		27816D451A856155009DF44B /* private.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = private.plist; sourceTree = "<group>"; };
 		27816D471A85622A009DF44B /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		27816D481A85622A009DF44B /* .ruby-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".ruby-version"; sourceTree = "<group>"; };
+		27816D4B1A856283009DF44B /* private.plist.example */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = private.plist.example; sourceTree = "<group>"; };
 		27DE7B391A854C34009A6B17 /* codepath-assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "codepath-assignment1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27DE7B3D1A854C34009A6B17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27DE7B3E1A854C34009A6B17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				27816D471A85622A009DF44B /* .gitignore */,
 				27816D481A85622A009DF44B /* .ruby-version */,
 				27816D451A856155009DF44B /* private.plist */,
+				27816D4B1A856283009DF44B /* private.plist.example */,
 				27DE7B3B1A854C34009A6B17 /* codepath-assignment1 */,
 				27DE7B511A854C34009A6B17 /* codepath-assignment1Tests */,
 				27DE7B3A1A854C34009A6B17 /* Products */,
@@ -230,6 +233,7 @@
 			files = (
 				27816D491A85622A009DF44B /* .gitignore in Resources */,
 				27DE7B651A855C67009A6B17 /* Images.xcassets in Resources */,
+				27816D4C1A856283009DF44B /* private.plist.example in Resources */,
 				27816D4A1A85622A009DF44B /* .ruby-version in Resources */,
 				27DE7B441A854C34009A6B17 /* Main.storyboard in Resources */,
 				27816D461A856155009DF44B /* private.plist in Resources */,
