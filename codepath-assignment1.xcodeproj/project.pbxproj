@@ -11,6 +11,8 @@
 		27816D491A85622A009DF44B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 27816D471A85622A009DF44B /* .gitignore */; };
 		27816D4A1A85622A009DF44B /* .ruby-version in Resources */ = {isa = PBXBuildFile; fileRef = 27816D481A85622A009DF44B /* .ruby-version */; };
 		27816D4C1A856283009DF44B /* private.plist.example in Resources */ = {isa = PBXBuildFile; fileRef = 27816D4B1A856283009DF44B /* private.plist.example */; };
+		27816D4F1A8570BA009DF44B /* top_rentals.json in Resources */ = {isa = PBXBuildFile; fileRef = 27816D4E1A8570BA009DF44B /* top_rentals.json */; };
+		27816D511A857406009DF44B /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27816D501A857406009DF44B /* MovieTableViewCell.swift */; };
 		27DE7B3F1A854C34009A6B17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DE7B3E1A854C34009A6B17 /* AppDelegate.swift */; };
 		27DE7B411A854C34009A6B17 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DE7B401A854C34009A6B17 /* MovieTableViewController.swift */; };
 		27DE7B441A854C34009A6B17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27DE7B421A854C34009A6B17 /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 		27816D481A85622A009DF44B /* .ruby-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".ruby-version"; sourceTree = "<group>"; };
 		27816D4B1A856283009DF44B /* private.plist.example */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = private.plist.example; sourceTree = "<group>"; };
 		27816D4D1A8562F2009DF44B /* test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = test.playground; sourceTree = "<group>"; };
+		27816D4E1A8570BA009DF44B /* top_rentals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = top_rentals.json; sourceTree = "<group>"; };
+		27816D501A857406009DF44B /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		27DE7B391A854C34009A6B17 /* codepath-assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "codepath-assignment1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27DE7B3D1A854C34009A6B17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27DE7B3E1A854C34009A6B17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				27816D4D1A8562F2009DF44B /* test.playground */,
+				27816D4E1A8570BA009DF44B /* top_rentals.json */,
 				27816D471A85622A009DF44B /* .gitignore */,
 				27816D481A85622A009DF44B /* .ruby-version */,
 				27816D451A856155009DF44B /* private.plist */,
@@ -104,6 +109,7 @@
 				27DE7B421A854C34009A6B17 /* Main.storyboard */,
 				27DE7B471A854C34009A6B17 /* LaunchScreen.xib */,
 				27DE7B3C1A854C34009A6B17 /* Supporting Files */,
+				27816D501A857406009DF44B /* MovieTableViewCell.swift */,
 			);
 			path = "codepath-assignment1";
 			sourceTree = "<group>";
@@ -236,6 +242,7 @@
 				27816D491A85622A009DF44B /* .gitignore in Resources */,
 				27DE7B651A855C67009A6B17 /* Images.xcassets in Resources */,
 				27816D4C1A856283009DF44B /* private.plist.example in Resources */,
+				27816D4F1A8570BA009DF44B /* top_rentals.json in Resources */,
 				27816D4A1A85622A009DF44B /* .ruby-version in Resources */,
 				27DE7B441A854C34009A6B17 /* Main.storyboard in Resources */,
 				27816D461A856155009DF44B /* private.plist in Resources */,
@@ -292,6 +299,7 @@
 			files = (
 				27DE7B411A854C34009A6B17 /* MovieTableViewController.swift in Sources */,
 				27DE7B3F1A854C34009A6B17 /* AppDelegate.swift in Sources */,
+				27816D511A857406009DF44B /* MovieTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +429,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "codepath-assignment1/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -437,7 +444,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "codepath-assignment1/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

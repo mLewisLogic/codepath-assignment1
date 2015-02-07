@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="com.machel.movie-row" rowHeight="77" id="wOM-tp-Iku">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="com.machel.movie-row" rowHeight="77" id="wOM-tp-Iku" customClass="MovieTableViewCell" customModule="codepath_assignment1" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wOM-tp-Iku" id="Xdh-Hn-Ppv">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -27,6 +27,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="movieTitleLabel" destination="JGb-Di-8tU" id="huB-W7-gfk"/>
                                     <segue destination="jVr-H6-gAT" kind="show" id="F28-W3-OIB"/>
                                 </connections>
                             </tableViewCell>
