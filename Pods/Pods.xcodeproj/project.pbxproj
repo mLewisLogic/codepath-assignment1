@@ -86,7 +86,6 @@
 		1544CB3C5426DBA225DF7B5F /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		24E7E462FD4309FA373432D2 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
 		256ACCA31DF900209CE54014 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
-		27816D531A858B94009DF44B /* scratch.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = scratch.playground; sourceTree = "<group>"; };
 		306A35EEB9861A7C8DE74804 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
 		376BC2564640554EC76F66A8 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
 		3A83CC8969B8AA3BFF50D0B8 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
@@ -349,7 +348,6 @@
 		ABE21C604E99375798315861 = {
 			isa = PBXGroup;
 			children = (
-				27816D531A858B94009DF44B /* scratch.playground */,
 				906A0D2C282BA1DA11D4423C /* Podfile */,
 				239355B182E325A8AF0CEB11 /* Frameworks */,
 				81EA891AB2C31D24901DED15 /* Pods */,

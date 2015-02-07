@@ -25,9 +25,6 @@ class MovieTableViewController: UITableViewController {
     // Load data from the server
     private func loadData(pathSuffix: String) -> Dictionary<String, AnyObject>? {
         if let apikey = apiKey() {
-            let fullPath = "http://api.rottentomatoes.com/api/public/v1.0/\(pathSuffix).json?apikey=\(apikey)"
-            NSLog(fullPath)
-
             let components = NSURLComponents()
             components.scheme = "http"
             components.host = "api.rottentomatoes.com"
@@ -43,6 +40,7 @@ class MovieTableViewController: UITableViewController {
                 let dictionary = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: &errorValue) as NSDictionary
             })
         }
+
         return nil
     }
 

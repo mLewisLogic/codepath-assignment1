@@ -37,7 +37,7 @@
 		27816D471A85622A009DF44B /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		27816D481A85622A009DF44B /* .ruby-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".ruby-version"; sourceTree = "<group>"; };
 		27816D4B1A856283009DF44B /* private.plist.example */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = private.plist.example; sourceTree = "<group>"; };
-		27816D4D1A8562F2009DF44B /* test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = test.playground; sourceTree = "<group>"; };
+		27816D4D1A8562F2009DF44B /* private.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = private.playground; sourceTree = "<group>"; };
 		27816D4E1A8570BA009DF44B /* top_rentals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = top_rentals.json; sourceTree = "<group>"; };
 		27816D501A857406009DF44B /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		27DE7B391A854C34009A6B17 /* codepath-assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "codepath-assignment1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,7 +77,7 @@
 		27DE7B301A854C34009A6B17 = {
 			isa = PBXGroup;
 			children = (
-				27816D4D1A8562F2009DF44B /* test.playground */,
+				27816D4D1A8562F2009DF44B /* private.playground */,
 				27816D4E1A8570BA009DF44B /* top_rentals.json */,
 				27816D471A85622A009DF44B /* .gitignore */,
 				27816D481A85622A009DF44B /* .ruby-version */,
