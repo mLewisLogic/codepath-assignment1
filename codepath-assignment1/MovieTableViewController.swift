@@ -76,6 +76,7 @@ class MovieViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     // Allow the display of an error message
     private func displayErrorView(display: Bool) {
+        // First, shrink their height
         var viewFrame = self.errorView.frame
         var labelFrame = self.errorLabel.frame
         if display {
@@ -87,6 +88,8 @@ class MovieViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
         errorView.frame = viewFrame
         errorLabel.frame = labelFrame
+
+        // Second, hide the elements
         errorView.hidden = !display
         errorLabel.hidden = !display
     }
@@ -114,7 +117,6 @@ class MovieViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
             Alamofire.request(.GET, path, parameters: params).responseJSON {
                 (request, response, json, error) in
-                    sleep(2)
                     // clean up our progress bars
                     refreshControl.endRefreshing()
                     SVProgressHUD.dismiss()

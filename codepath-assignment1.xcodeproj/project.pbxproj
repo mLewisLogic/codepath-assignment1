@@ -15,6 +15,9 @@
 		27816D511A857406009DF44B /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27816D501A857406009DF44B /* MovieTableViewCell.swift */; };
 		27BCA0211A870FB30062BA19 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 27BCA0201A870FB30062BA19 /* SVProgressHUD.bundle */; };
 		27BCA0231A8714B90062BA19 /* ErrorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BCA0221A8714B90062BA19 /* ErrorTableViewCell.swift */; };
+		27BCA0251A872EB90062BA19 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 27BCA0241A872EB90062BA19 /* README.md */; };
+		27BCA0281A8730EE0062BA19 /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 27BCA0261A8730EE0062BA19 /* demo.gif */; };
+		27BCA0291A8730EE0062BA19 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 27BCA0271A8730EE0062BA19 /* LICENSE */; };
 		27DE7B3F1A854C34009A6B17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DE7B3E1A854C34009A6B17 /* AppDelegate.swift */; };
 		27DE7B411A854C34009A6B17 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DE7B401A854C34009A6B17 /* MovieTableViewController.swift */; };
 		27DE7B441A854C34009A6B17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27DE7B421A854C34009A6B17 /* Main.storyboard */; };
@@ -46,6 +49,9 @@
 		27816D501A857406009DF44B /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		27BCA0201A870FB30062BA19 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
 		27BCA0221A8714B90062BA19 /* ErrorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorTableViewCell.swift; sourceTree = "<group>"; };
+		27BCA0241A872EB90062BA19 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		27BCA0261A8730EE0062BA19 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
+		27BCA0271A8730EE0062BA19 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		27C5B0E01A86D39800F5B3B7 /* codepath-assignment1-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "codepath-assignment1-Bridging-Header.h"; sourceTree = "<group>"; };
 		27DE7B391A854C34009A6B17 /* codepath-assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "codepath-assignment1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27DE7B3D1A854C34009A6B17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +90,9 @@
 		27DE7B301A854C34009A6B17 = {
 			isa = PBXGroup;
 			children = (
+				27BCA0241A872EB90062BA19 /* README.md */,
+				27BCA0261A8730EE0062BA19 /* demo.gif */,
+				27BCA0271A8730EE0062BA19 /* LICENSE */,
 				27BCA0201A870FB30062BA19 /* SVProgressHUD.bundle */,
 				27C5B0E01A86D39800F5B3B7 /* codepath-assignment1-Bridging-Header.h */,
 				27816D4D1A8562F2009DF44B /* private.playground */,
@@ -256,8 +265,10 @@
 				27DE7B651A855C67009A6B17 /* Images.xcassets in Resources */,
 				27816D4C1A856283009DF44B /* private.plist.example in Resources */,
 				27816D4F1A8570BA009DF44B /* top_rentals.json in Resources */,
+				27BCA0291A8730EE0062BA19 /* LICENSE in Resources */,
 				27816D4A1A85622A009DF44B /* .ruby-version in Resources */,
 				27DE7B441A854C34009A6B17 /* Main.storyboard in Resources */,
+				27BCA0281A8730EE0062BA19 /* demo.gif in Resources */,
 				27816D461A856155009DF44B /* private.plist in Resources */,
 				27DE7B491A854C34009A6B17 /* LaunchScreen.xib in Resources */,
 			);
@@ -325,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27BCA0251A872EB90062BA19 /* README.md in Sources */,
 				27EF51361A86DB6700768D99 /* MovieDetailsViewController.swift in Sources */,
 				27DE7B411A854C34009A6B17 /* MovieTableViewController.swift in Sources */,
 				27BCA0231A8714B90062BA19 /* ErrorTableViewCell.swift in Sources */,
