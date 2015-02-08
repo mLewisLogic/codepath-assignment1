@@ -3,33 +3,32 @@ import SVProgressHUD
 import SwiftyJSON
 import UIKit
 
-class MovieTableViewController: UITableViewController {
+class MovieViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var errorView: UIView!
     @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
 
     var moviesArray: [JSON]?
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        refreshControl = UIRefreshControl()
-        refreshControl?.addTarget(self, action: "loadMovieIndex", forControlEvents: UIControlEvents.ValueChanged)
-        self.view.insertSubview(refreshControl!, atIndex: 0)
+        // Set our source and add the tableview to the view
+        tableView.dataSource = self
+        self.view.addSubview(tableView)
+
+        // Set up our UIRefreshControl for pull-down refresh
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: Selector("loadMovieIndex:"), forControlEvents: .ValueChanged)
+        tableView.insertSubview(refreshControl, atIndex: 0)
 
         self.displayErrorView(false)
-        self.loadMovieIndex()
+        loadMovieIndex(refreshControl)
     }
 
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-    }
-
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-    }
-
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let array = self.moviesArray {
             return array.count
         } else {
@@ -38,7 +37,7 @@ class MovieTableViewController: UITableViewController {
     }
 
     // Build each cell
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("com.machel.movie-row") as MovieTableViewCell
         if let movieDetails = self.movieDetailsAtIndex(indexPath.row) {
             if let title = movieDetails["title"].string {
@@ -68,8 +67,8 @@ class MovieTableViewController: UITableViewController {
         }
     }
 
-    func loadMovieIndex() {
-        loadData("lists/dvds/top_rentals")
+    func loadMovieIndex(refreshControl: UIRefreshControl) {
+        loadData("lists/dvds/top_rentals", refreshControl: refreshControl)
     }
 
 
@@ -88,6 +87,8 @@ class MovieTableViewController: UITableViewController {
         }
         errorView.frame = viewFrame
         errorLabel.frame = labelFrame
+        errorView.hidden = !display
+        errorLabel.hidden = !display
     }
 
     private func movieDetailsAtIndex(index: Int) -> JSON? {
@@ -102,9 +103,8 @@ class MovieTableViewController: UITableViewController {
     }
 
     // Load data from the server into this table's data source
-    private func loadData(pathSuffix: String) {
+    private func loadData(pathSuffix: String, refreshControl: UIRefreshControl) {
         SVProgressHUD.showWithStatus("loading", maskType: SVProgressHUDMaskType.Gradient)
-        self.displayErrorView(true)
 
         if let apikey = apiKey() {
             let path = "http://api.rottentomatoes.com/api/public/v1.0/\(pathSuffix).json"
@@ -114,7 +114,11 @@ class MovieTableViewController: UITableViewController {
 
             Alamofire.request(.GET, path, parameters: params).responseJSON {
                 (request, response, json, error) in
-                    NSThread.sleepForTimeInterval(10.0)
+                    sleep(2)
+                    // clean up our progress bars
+                    refreshControl.endRefreshing()
+                    SVProgressHUD.dismiss()
+
                     if(error != nil) {
                         NSLog("Error: \(error)")
                         self.displayErrorView(true)
@@ -123,9 +127,7 @@ class MovieTableViewController: UITableViewController {
                         let jsonData = JSON(json!)
                         if let moviesArray = jsonData["movies"].array {
                             self.moviesArray = moviesArray
-                            SVProgressHUD.dismiss()
                             self.displayErrorView(false)
-                            self.refreshControl?.endRefreshing()
                             self.tableView.reloadData()
                         }
                     }

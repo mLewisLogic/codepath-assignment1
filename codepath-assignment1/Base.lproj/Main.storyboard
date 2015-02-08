@@ -5,63 +5,91 @@
     </dependencies>
     <scenes>
         <!--Rotten Tomatoes-->
-        <scene sceneID="9Fx-Xh-uSr">
+        <scene sceneID="m6g-fD-UYG">
             <objects>
-                <tableViewController id="yry-Fj-ClR" customClass="MovieTableViewController" customModule="codepath_assignment1" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="113" sectionHeaderHeight="22" sectionFooterHeight="22" id="LMY-aO-xyr">
+                <viewController id="CwM-cO-BnD" customClass="MovieViewController" customModule="codepath_assignment1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1zZ-Bx-9nd"/>
+                        <viewControllerLayoutGuide type="bottom" id="jo0-LG-zVO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UPj-XR-LLq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="com.machel.movie-row" rowHeight="113" id="wOM-tp-Iku" customClass="MovieTableViewCell" customModule="codepath_assignment1" customModuleProvider="target">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wOM-tp-Iku" id="Xdh-Hn-Ppv">
-                                    <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="113" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="m2d-cE-4aJ">
+                                <rect key="frame" x="-1" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="5tu-yq-y5r">
+                                    <rect key="frame" x="0.0" y="64" width="320" height="23"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Teenage Mutant Ninja Turtles" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGb-Di-8tU">
-                                            <rect key="frame" x="119" y="8" width="193" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PZW-yj-xz4">
-                                            <rect key="frame" x="0.0" y="0.0" width="111" height="113"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PG-13" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOP-OV-dYX">
-                                            <rect key="frame" x="55" y="92" width="56" height="21"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxN-TI-JBc">
-                                            <rect key="frame" x="119" y="29" width="193" height="75"/>
-                                            <string key="text">The city needs heroes. Darkness has settled over New York City as Shredder and his evil Foot Clan have an iron grip on everything from the police to the politicians. The future is grim until four unlikely outcast brothers rise from the sewers and discover their destiny as Teenage Mutant Ninja Turtles. The Turtles must work with fearless reporter April O'Neil (Megan Fox) and her wise-cracking cameraman Vern Fenwick (Will Arnett) to save the city and unravel Shredder's diabolical plan. Based on the Teenage Mutant Ninja Turtles Characters Created by PETER LAIRD and KEVIN EASTMAN with a Screenplay by JOSH APPELBAUM &amp; ANDRE NEMEC and EVAN DAUGHERTY, Teenage Mutant Ninja Turtles is produced by MICHAEL BAY (director and executive producer of the blockbuster Transformers franchise), Andrew Form, Brad Fuller, Galen Walker, Scott Mednick and Ian Bryce, and directed by JONATHAN LIEBESMAN (Wrath of the Titans).(c) Paramount</string>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Network error" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2b-FY-TOf">
+                                            <rect key="frame" x="113" y="1" width="94" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                </tableViewCellContentView>
+                                    <color key="backgroundColor" red="0.52833034656336553" green="0.8159926080009372" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="com.machel.movie-row" rowHeight="113" id="wOM-tp-Iku" customClass="MovieTableViewCell" customModule="codepath_assignment1" customModuleProvider="target">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wOM-tp-Iku" id="Xdh-Hn-Ppv">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Teenage Mutant Ninja Turtles" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGb-Di-8tU">
+                                                    <rect key="frame" x="119" y="8" width="193" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PZW-yj-xz4">
+                                                    <rect key="frame" x="0.0" y="0.0" width="111" height="113"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PG-13" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOP-OV-dYX">
+                                                    <rect key="frame" x="55" y="92" width="56" height="21"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxN-TI-JBc">
+                                                    <rect key="frame" x="119" y="29" width="193" height="75"/>
+                                                    <string key="text">The city needs heroes. Darkness has settled over New York City as Shredder and his evil Foot Clan have an iron grip on everything from the police to the politicians. The future is grim until four unlikely outcast brothers rise from the sewers and discover their destiny as Teenage Mutant Ninja Turtles. The Turtles must work with fearless reporter April O'Neil (Megan Fox) and her wise-cracking cameraman Vern Fenwick (Will Arnett) to save the city and unravel Shredder's diabolical plan. Based on the Teenage Mutant Ninja Turtles Characters Created by PETER LAIRD and KEVIN EASTMAN with a Screenplay by JOSH APPELBAUM &amp; ANDRE NEMEC and EVAN DAUGHERTY, Teenage Mutant Ninja Turtles is produced by MICHAEL BAY (director and executive producer of the blockbuster Transformers franchise), Andrew Form, Brad Fuller, Galen Walker, Scott Mednick and Ian Bryce, and directed by JONATHAN LIEBESMAN (Wrath of the Titans).(c) Paramount</string>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="movieImageView" destination="PZW-yj-xz4" id="phu-vH-PyL"/>
+                                            <outlet property="movieMPAARatingLabel" destination="qOP-OV-dYX" id="eDR-eq-poH"/>
+                                            <outlet property="movieSynopsisLabel" destination="AxN-TI-JBc" id="Ivv-mW-C1b"/>
+                                            <outlet property="movieTitleLabel" destination="JGb-Di-8tU" id="huB-W7-gfk"/>
+                                            <segue destination="jVr-H6-gAT" kind="push" identifier="detailsSegue" id="F28-W3-OIB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <outlet property="movieImageView" destination="PZW-yj-xz4" id="phu-vH-PyL"/>
-                                    <outlet property="movieMPAARatingLabel" destination="qOP-OV-dYX" id="eDR-eq-poH"/>
-                                    <outlet property="movieSynopsisLabel" destination="AxN-TI-JBc" id="Ivv-mW-C1b"/>
-                                    <outlet property="movieTitleLabel" destination="JGb-Di-8tU" id="huB-W7-gfk"/>
-                                    <segue destination="jVr-H6-gAT" kind="push" identifier="detailsSegue" id="F28-W3-OIB"/>
+                                    <outlet property="dataSource" destination="CwM-cO-BnD" id="BbQ-Pb-Ygk"/>
+                                    <outlet property="delegate" destination="CwM-cO-BnD" id="6kP-EH-1Jz"/>
                                 </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="yry-Fj-ClR" id="j4A-0k-3kh"/>
-                            <outlet property="delegate" destination="yry-Fj-ClR" id="jfh-sE-mZi"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Rotten Tomatoes" id="Pl9-lY-qd0"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xYK-9Q-lT4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rotten Tomatoes" id="pLr-Zq-xH1"/>
+                    <connections>
+                        <outlet property="errorLabel" destination="A2b-FY-TOf" id="zad-of-p2N"/>
+                        <outlet property="errorView" destination="5tu-yq-y5r" id="f86-Xh-N4o"/>
+                        <outlet property="tableView" destination="m2d-cE-4aJ" id="I5z-lH-vbU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Izv-0z-i3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="578" y="341"/>
+            <point key="canvasLocation" x="580" y="341"/>
         </scene>
         <!--Movie Title-->
         <scene sceneID="ody-59-mMM">
@@ -156,7 +184,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="yry-Fj-ClR" kind="relationship" relationship="rootViewController" id="NC3-mo-qz0"/>
+                        <segue destination="CwM-cO-BnD" kind="relationship" relationship="rootViewController" id="ZRR-95-3g2"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jdf-fw-LAv" userLabel="First Responder" sceneMemberID="firstResponder"/>
