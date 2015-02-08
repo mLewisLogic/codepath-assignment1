@@ -1,34 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6750" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Lun-gr-q79">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6750" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Lun-gr-q79">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735"/>
     </dependencies>
     <scenes>
-        <!--Movie Table View Controller-->
+        <!--Rotten Tomatoes-->
         <scene sceneID="9Fx-Xh-uSr">
             <objects>
                 <tableViewController id="yry-Fj-ClR" customClass="MovieTableViewController" customModule="codepath_assignment1" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="77" sectionHeaderHeight="22" sectionFooterHeight="22" id="LMY-aO-xyr">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="113" sectionHeaderHeight="22" sectionFooterHeight="22" id="LMY-aO-xyr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="com.machel.movie-row" rowHeight="77" id="wOM-tp-Iku" customClass="MovieTableViewCell" customModule="codepath_assignment1" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="com.machel.movie-row" rowHeight="113" id="wOM-tp-Iku" customClass="MovieTableViewCell" customModule="codepath_assignment1" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wOM-tp-Iku" id="Xdh-Hn-Ppv">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Movie Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGb-Di-8tU">
-                                            <rect key="frame" x="119" y="28" width="94" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Teenage Mutant Ninja Turtles" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGb-Di-8tU">
+                                            <rect key="frame" x="119" y="8" width="193" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PZW-yj-xz4">
+                                            <rect key="frame" x="0.0" y="0.0" width="111" height="113"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PG-13" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOP-OV-dYX">
+                                            <rect key="frame" x="55" y="92" width="56" height="21"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxN-TI-JBc">
+                                            <rect key="frame" x="119" y="29" width="193" height="75"/>
+                                            <string key="text">The city needs heroes. Darkness has settled over New York City as Shredder and his evil Foot Clan have an iron grip on everything from the police to the politicians. The future is grim until four unlikely outcast brothers rise from the sewers and discover their destiny as Teenage Mutant Ninja Turtles. The Turtles must work with fearless reporter April O'Neil (Megan Fox) and her wise-cracking cameraman Vern Fenwick (Will Arnett) to save the city and unravel Shredder's diabolical plan. Based on the Teenage Mutant Ninja Turtles Characters Created by PETER LAIRD and KEVIN EASTMAN with a Screenplay by JOSH APPELBAUM &amp; ANDRE NEMEC and EVAN DAUGHERTY, Teenage Mutant Ninja Turtles is produced by MICHAEL BAY (director and executive producer of the blockbuster Transformers franchise), Andrew Form, Brad Fuller, Galen Walker, Scott Mednick and Ian Bryce, and directed by JONATHAN LIEBESMAN (Wrath of the Titans).(c) Paramount</string>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="movieImageView" destination="PZW-yj-xz4" id="phu-vH-PyL"/>
+                                    <outlet property="movieMPAARatingLabel" destination="qOP-OV-dYX" id="eDR-eq-poH"/>
+                                    <outlet property="movieSynopsisLabel" destination="AxN-TI-JBc" id="Ivv-mW-C1b"/>
                                     <outlet property="movieTitleLabel" destination="JGb-Di-8tU" id="huB-W7-gfk"/>
-                                    <segue destination="jVr-H6-gAT" kind="show" id="F28-W3-OIB"/>
+                                    <segue destination="jVr-H6-gAT" kind="push" identifier="detailsSegue" id="F28-W3-OIB"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -37,35 +57,99 @@
                             <outlet property="delegate" destination="yry-Fj-ClR" id="jfh-sE-mZi"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Pl9-lY-qd0"/>
+                    <navigationItem key="navigationItem" title="Rotten Tomatoes" id="Pl9-lY-qd0"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYK-9Q-lT4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1084" y="361"/>
+            <point key="canvasLocation" x="578" y="341"/>
         </scene>
-        <!--View Controller-->
+        <!--Movie Title-->
         <scene sceneID="ody-59-mMM">
             <objects>
-                <viewController id="jVr-H6-gAT" sceneMemberID="viewController">
+                <viewController id="jVr-H6-gAT" customClass="MovieDetailsViewController" customModule="codepath_assignment1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ykh-tp-wVU"/>
-                        <viewControllerLayoutGuide type="bottom" id="P4e-P6-FA5"/>
+                        <viewControllerLayoutGuide type="top" id="49G-X5-p35"/>
+                        <viewControllerLayoutGuide type="bottom" id="kP5-Er-Jrk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1Dc-aJ-Yep">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LP3-Z1-Lim" userLabel="Background Image View">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <scrollView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eke-KM-DGP">
+                                <rect key="frame" x="0.0" y="64" width="320" height="512"/>
+                                <subviews>
+                                    <view alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6g9-pF-xpd" userLabel="Detail View">
+                                        <rect key="frame" x="0.0" y="270" width="320" height="550"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Movie Title (year)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WD-36-NmD">
+                                                <rect key="frame" x="8" y="8" width="304" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Critic's rating: 100%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66c-vc-GCv">
+                                                <rect key="frame" x="8" y="30" width="304" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Audience rating: 100%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3p-kE-YDL">
+                                                <rect key="frame" x="8" y="43" width="304" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PG-13" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBF-th-F3A">
+                                                <rect key="frame" x="8" y="58" width="304" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Synopsis" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="304" translatesAutoresizingMaskIntoConstraints="NO" id="oRw-gv-3Xl">
+                                                <rect key="frame" x="8" y="83" width="304" height="200"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="0.0" height="600"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Movie Title" id="QGH-aJ-fPE" userLabel="Movie Title">
+                        <barButtonItem key="backBarButtonItem" title="Movies" id="2aJ-Yh-oZg"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="audienceRatingLabel" destination="Y3p-kE-YDL" id="C4A-0U-3Ka"/>
+                        <outlet property="criticsRatingLabel" destination="66c-vc-GCv" id="m6i-Ze-3vP"/>
+                        <outlet property="movieImageView" destination="LP3-Z1-Lim" id="mXb-cG-anb"/>
+                        <outlet property="movieTitleLabel" destination="5WD-36-NmD" id="21z-cB-yfA"/>
+                        <outlet property="mpaaRatingLabel" destination="PBF-th-F3A" id="kEL-G1-UVI"/>
+                        <outlet property="navBarItem" destination="QGH-aJ-fPE" id="smk-Cb-Sgq"/>
+                        <outlet property="synopsisLabel" destination="oRw-gv-3Xl" id="epg-lb-fe3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="plS-pE-Od2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1744" y="361"/>
+            <point key="canvasLocation" x="964" y="341"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PCe-3t-Dch">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lun-gr-q79" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="iOK-Up-99t">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -77,7 +161,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jdf-fw-LAv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="430" y="361"/>
+            <point key="canvasLocation" x="191" y="341"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
